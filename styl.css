@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    /*Primary*/
+   --dkblue: hsl(233, 26%, 24%);
+   --limegreen: hsl(136, 65%, 51%);
+   --brightcyan: hsl(192, 70%, 51%);
+     
+   /*Neutral*/
+   --grayishblue: hsl(233, 8%, 62%);
+   --lightgrayishblue: hsl(220, 16%, 96%);
+   --verylightgray: hsl(0, 0%, 98%);
+   --white:  hsl(0, 0%, 100%);
+
+   --fs: 1.125px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-list {
+    font-size: 1.4rem;
+}
+
+
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+
+
+@media  (max-width: 48em){
+   header{
+    padding: .9em;
+   }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .foo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile_nav_toggle{
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        padding: .5em;
+    
+    }
+    
+    .mobile_nav_toggle .icon-close{
+        display: none;
+    }
+
+    .primary-navigation{
+        background-color: var(--white);
+        border-radius: .25rem;
+        display: none;
+        position: fixed;
+        inset: 7rem 1rem auto;
+        padding: 3rem;
+    }
+
+    .primary-navigation[data-visible]{
+        display: block;
+        
+    }
+
+    .bg-color{
+        position: fixed;
+        inset: 0;
+        background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.7));
+    }
+
+    .nav-list{
+        font-weight: 300;
+        display: grid;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav-list a{
+        color: var(--dkblue);
+        
+    }
+
+    
+
+
+
+    
+}
+
+
+@media (min-width: 48em){
+    .mobile_nav_toggle{
+        display: none;
+    }
+}
