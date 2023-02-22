@@ -40,12 +40,20 @@ body{
     font-family: 'Public Sans', sans-serif;
 }
 
+img,picture{
+    display: block;
+    max-width: 100%;
+}
+
 
 
 
 @media  (max-width: 48em){
    header{
+    background-color: var(--white);
+    box-shadow: 0 0 .6em rgb(0 0 0 / .6);
     padding: .9em;
+    
    }
 
     .visually-hidden {
@@ -67,32 +75,41 @@ body{
     }
 
     .mobile_nav_toggle{
-        border: 0;
+        background-image: url('./images/icon-hamburger.svg');
+        background-repeat: no-repeat;
         background-color: transparent;
+        border: 0;
+        height: 40px;
+        width: 40px;
         cursor: pointer;
+        margin-top: 20px;
         padding: .5em;
+        
+        
     
     }
     
-    .mobile_nav_toggle .icon-close{
-        display: none;
+    .mobile_nav_toggle[aria-expanded="true"]{
+        background-image: url('./images/icon-close.svg');
+        
     }
 
     .primary-navigation{
         background-color: var(--white);
         border-radius: .25rem;
-        display: none;
-        position: fixed;
+        position: absolute;
         inset: 7rem 1rem auto;
         padding: 3rem;
+        display: none;
     }
 
-    .primary-navigation[data-visible]{
+    .primary-navigation[data-visible='true']{
         display: block;
-        
     }
 
-    .bg-color{
+    
+
+    .wrapper-bgColor{
         position: fixed;
         inset: 0;
         background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.7));
@@ -110,7 +127,13 @@ body{
         
     }
 
-    
+    .bg{
+        background-image: url('./images/bg-intro-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        height: 300px;
+    }
 
 
 
