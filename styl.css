@@ -22,6 +22,14 @@
    --fs: 1.125px;
 }
 
+header{
+    background-color: var(--white);
+    box-shadow: 0 0 .6em rgb(0 0 0 / .6);
+    position: relative;
+    z-index: 1000;
+    
+}
+
 ul{
     list-style: none;
 }
@@ -45,15 +53,19 @@ img,picture{
     max-width: 100%;
 }
 
+footer{
+    background-color: var(--grayishblue);
+}
 
 
 
 @media  (max-width: 48em){
-   header{
-    background-color: var(--white);
-    box-shadow: 0 0 .6em rgb(0 0 0 / .6);
-    padding: .9em;
-    
+    header{
+        padding: .9rem;
+    }
+
+   .deskbtn{
+    display: none;
    }
 
     .visually-hidden {
@@ -145,4 +157,39 @@ img,picture{
     .mobile_nav_toggle{
         display: none;
     }
+
+    header{
+        padding: 1.5rem;
+       
+        
+    }
+
+    .foo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ul{
+        display: flex;
+        gap: 15px;
+    }
+
+    .bg{
+        background-image: url('./images/bg-intro-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        height: 300px;
+        
+    }
+
+    .mockup{
+        position: absolute;
+        inset: -10% 0 0 60%;
+        width: 500px;
+       
+        
+    }
+   
 }
