@@ -53,6 +53,24 @@ img,picture{
     max-width: 100%;
 }
 
+.boo{
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgb(0 0 0 / .6);
+}
+
+button{
+    border: 0;
+    background-image: linear-gradient(to right,var(--limegreen) , var(--brightcyan));
+    color: var(--white);
+    padding: 10px;
+}
+
+.card {
+  background-color: var(--white);
+  box-shadow: 10px 10px 5px rgb(0 0 0 / rgb(0 0 0 / .6));
+  margin-bottom: 20px;
+}
+
 footer{
     background-color: var(--grayishblue);
 }
@@ -139,12 +157,20 @@ footer{
         
     }
 
+     
     .bg{
         background-image: url('./images/bg-intro-mobile.svg');
         background-repeat: no-repeat;
         background-position: left;
         background-size: cover;
         height: 300px;
+        
+    }
+
+    .mockup{
+        position: absolute;
+        inset: 10%;
+        width: 300px;
     }
 
 
