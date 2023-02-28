@@ -55,24 +55,31 @@ img,picture{
 
 .boo{
     background-color: var(--white);
-    box-shadow: 0 0 10px rgb(0 0 0 / .6);
+    box-shadow: 0 0 5px rgba(0 0 0 / .5);
 }
 
 button{
     border: 0;
     background-image: linear-gradient(to right,var(--limegreen) , var(--brightcyan));
+    border-radius: 50px;
     color: var(--white);
-    padding: 10px;
+   
 }
 
-.card {
+.container {
+    background-color: var(--white);
+    box-shadow: 0 15px 20px rgba(17, 16, 16, 0.3);
+}
+
+.card_info {
   background-color: var(--white);
-  box-shadow: 10px 10px 5px rgb(0 0 0 / rgb(0 0 0 / .6));
+  box-shadow: 0 20px 20px rgba(17, 16, 16, 0.04);
   margin-bottom: 20px;
 }
 
 footer{
-    background-color: var(--grayishblue);
+    background-color: var(--dkblue);
+   
 }
 
 
@@ -169,8 +176,80 @@ footer{
 
     .mockup{
         position: absolute;
-        inset: 10%;
+        inset: -6% 10%;
         width: 300px;
+    }
+
+    .next_gen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        text-align: center;
+        padding: 50px 30px;
+    }
+
+    .next_gen h1 {
+      font-size: 2rem;
+    }
+
+    .next_gen p {
+        line-height: 25px;
+    }
+
+    button{
+        font-size: 1.1rem;
+        padding: 12px 40px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+        padding-top: 50px;
+        
+    }
+
+    .section1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 30px;
+    }
+
+    .section1 h1, img{
+        padding-bottom: 15px;
+    }
+
+    .section1 p {
+        line-height: 25px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .container{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .container h1{
+        padding: 50px;
+    }
+
+    .card img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 400px;
+    }
+
+    .card_info{
+        padding: 25px;
     }
 
 
